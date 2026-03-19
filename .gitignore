@@ -1,0 +1,14 @@
+# videos
+*.avi
+output_video/
+runs/
+
+# models
+*.pt
+
+# cache
+__pycache__/
+*.pyc
+
+# temp files
+*.pkl
