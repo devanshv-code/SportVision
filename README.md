@@ -1,24 +1,25 @@
-# SportVision AI: YOLO-Based Sports Analytics System
+# SportVision AI: YOLO-Based Sports Player Detection and Tracking
 
-SportVision AI is a computer vision project built using **YOLOv8, OpenCV, and Python** for real-time sports video analysis.  
-The system detects and tracks players from sports footage, helping in performance analysis, movement understanding, and automated visual insights.
+SportVision AI is a computer vision project built using **YOLOv8, OpenCV, and Python** for sports video analysis.  
+It detects and tracks players in video frames, making it useful for player movement analysis, sports analytics, and real-time computer vision learning.
 
 ---
 
 ## Features
 
-- Real-time player detection using **YOLOv8**
+- Player detection using **YOLOv8**
 - Object tracking across video frames
-- Sports video analysis with bounding boxes
-- Frame-by-frame video processing using **OpenCV**
-- Easy to extend for ball tracking, team classification, and movement analytics
+- Bounding box visualization on players
+- Video frame processing with **OpenCV**
+- Reusable tracking pipeline with saved stub support
+- Can be extended for ball tracking, team classification, and tactical analysis
 
 ---
 
 ## Tech Stack
 
 - **Python**
-- **YOLOv8**
+- **YOLOv8 (Ultralytics)**
 - **OpenCV**
 - **NumPy**
 - **Pickle**
@@ -29,27 +30,28 @@ The system detects and tracks players from sports footage, helping in performanc
 
 ## Project Overview
 
-The goal of this project is to analyze sports videos automatically using deep learning.  
-It detects players in each frame and tracks them through the video, making it useful for:
+This project analyzes sports videos by detecting players in each frame and tracking them throughout the video.  
+The system is designed to help in:
 
+- Player tracking
 - Sports performance analysis
-- Player movement tracking
-- Automated match insights
-- Computer vision learning projects
+- Movement understanding
+- Learning real-world computer vision workflows
 
 ---
 
 ## Project Structure
 
 ```bash
-YOLO_Sports_Analysis/
+SportVision/
 │
-├── main.py
-├── trackers/
-├── utils/
-├── training/
-├── input_videos/
-├── output_videos/
-├── models/
+├── .vscode/
+├── input_video/
 ├── stubs/
+├── trackers/
+├── training/
+├── utils/
+├── .gitignore
+├── main.py
+├── yolo_inference.py
 └── README.md
